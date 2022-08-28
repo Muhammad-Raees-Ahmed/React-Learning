@@ -17,7 +17,7 @@ function App() {
    <div className='App'>
       <h1 style={{color:'GrayText'}}>Hello {`Hello ${name[0]} and i am ${name[1]}`}</h1>
       <h2>Time is = {time}</h2>
-      <h2>Date is = {date}</h2>  
+      <h2>Date is : {date}</h2>  
       <img src={obj.img1} alt='image'></img>
       <img src={obj.img2} alt='image'></img>
       <img src={obj.img3} alt='image'></img>
