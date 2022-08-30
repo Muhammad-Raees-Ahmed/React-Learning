@@ -6,6 +6,7 @@ import Multiply from "./Components/Multiply";
 import Add, {add,mul,div, sub } from "./Components/Add";
 import { calculate } from "./Components/Add";
 import Subtract from "./Components/Subtract";
+import Card1 from "./Components/Card1";
 
 // let today = new Date();
 // const time =
@@ -53,19 +54,19 @@ import Subtract from "./Components/Subtract";
 function App() {
   
   return (
-    <div className=".App">
+    <>
 
       {/* <Add/>
       <Subtract/>
       <Multiply/>
       <Divide/> */}
-      <div style={textstyle}>
+      {/* <div style={textstyle}>
       <h1>Addition is : {add(2,3)}</h1>
       <h1>Subtraction is : {sub(14,7)}</h1>
       <h1>Multiplication is : {mul(3,3)}</h1>
       <h1>Division is :{div(8,4)}</h1>
       </div>
-      
+       */}
       {/* <h1 >Hello {`Hello ${name[0]} and i am ${name[1]}`}</h1>
       <h2>Time is = {time}</h2>
       <h2>Date is : {date}</h2>  
@@ -79,7 +80,18 @@ function App() {
         </h1>
       </div> */}
 
-    </div>
+<div className="row">
+<div className="column">
+<Card1/>
+</div>  
+<div className="column">
+  <Card1/>
+</div>
+<div className="column">
+  <Card1/>
+</div>
+</div> 
+    </>
   );
 }
 
