@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import First from './Components/First';
+import Second from './Components/Second';
+
+
 let today = new Date();
 const time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
 let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
@@ -54,7 +58,11 @@ const back={
       <img src={obj.img1} alt='image'></img>
       <img src={obj.img2} alt='image'></img>
       <img src={obj.img3} alt='image'></img> */}
+     
       <div style={textstyle}>
+      <First/>
+      <Second/>
+      
       <h1 >
         Hello Sir, <span style={textcolor}>{greetings }</span> 
         </h1>
