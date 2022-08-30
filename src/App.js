@@ -3,7 +3,8 @@ import "./App.css";
 import React from "react";
 import Divide from "./Components/Divide";
 import Multiply from "./Components/Multiply";
-import Add from "./Components/Add";
+import Add, {add,mul,div, sub } from "./Components/Add";
+import { calculate } from "./Components/Add";
 import Subtract from "./Components/Subtract";
 
 // let today = new Date();
@@ -35,27 +36,35 @@ import Subtract from "./Components/Subtract";
 //     greetings = "Good Night";
 //     textcolor.color = "red";
 //   }
-//   const textstyle = {
-//     marginTop: "150px",
-//     textAlign: "center",
-//     backgroundColor: "#0af0d1",
-//     marginRight: "450px",
-//     marginLeft: "450px",
-//     border: "2px solid red",
-//     borderRadius: "50px 20px",
-//   };
+  const textstyle = {
+    marginTop: "150px",
+    textAlign: "center",
+    backgroundColor: "#0af0d1",
+    marginRight: "450px",
+    marginLeft: "450px",
+    border: "2px solid red",
+    borderRadius: "50px 20px",
+  };
 //   const back = {
 //     backgroundColor: "blue",
 //   };
+
+
 function App() {
   
   return (
     <div className=".App">
 
-      <Add/>
+      {/* <Add/>
       <Subtract/>
       <Multiply/>
-      <Divide/>
+      <Divide/> */}
+      <div style={textstyle}>
+      <h1>Addition is : {add(2,3)}</h1>
+      <h1>Subtraction is : {sub(14,7)}</h1>
+      <h1>Multiplication is : {mul(3,3)}</h1>
+      <h1>Division is :{div(8,4)}</h1>
+      </div>
       
       {/* <h1 >Hello {`Hello ${name[0]} and i am ${name[1]}`}</h1>
       <h2>Time is = {time}</h2>
