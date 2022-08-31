@@ -7,6 +7,7 @@ import Add, { add, mul, div, sub } from "./Components/Add";
 import { calculate } from "./Components/Add";
 import Subtract from "./Components/Subtract";
 import Card1 from "./Components/Card1";
+import Navbar from "./Components/Navbar";
 
 // let today = new Date();
 // const time =
@@ -54,29 +55,33 @@ const myobj1=[
   {
     name:'Raees',
     role:'Full stack developer',
-    company:'Hashpotato'
+    company:'Hashpotato',
+    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
   },
   {
     name:'Rameez',
     role:'MERN stack developer',
-    company:'Hashpotato'
+    company:'Hashpotato',
+    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
   },
   {
     name:'Adeel',
     role:'MERN stack developer',
-    company:'Hashpotato'
+    company:'Hashpotato',
+    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
+  },
+  {
+    n1:'Home',
+    n2:'About',
+    n3:'Contact'
   }
 ];
-const test={
-  name:"raees",
-  name1:'rameez'
-}
-let age=56;
+
 function App() {
 
   return (
     <>
-
+<Navbar data={myobj1[3]}/>
       {/* <Add/>
       <Subtract/>
       <Multiply/>
@@ -101,6 +106,8 @@ function App() {
         </h1>
       </div> */}
 
+<div className="App1">
+
       <div className="row">
         <div className="column">
           <Card1  data={myobj1[0]}/>
@@ -111,6 +118,8 @@ function App() {
         <div className="column">
           <Card1  data={myobj1[2]}/>
         </div>
+      </div>
+  
       </div>
     </>
   );
