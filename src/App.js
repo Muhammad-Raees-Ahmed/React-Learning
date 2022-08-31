@@ -3,7 +3,7 @@ import "./App.css";
 import React from "react";
 import Divide from "./Components/Divide";
 import Multiply from "./Components/Multiply";
-import Add, {add,mul,div, sub } from "./Components/Add";
+import Add, { add, mul, div, sub } from "./Components/Add";
 import { calculate } from "./Components/Add";
 import Subtract from "./Components/Subtract";
 import Card1 from "./Components/Card1";
@@ -37,22 +37,43 @@ import Card1 from "./Components/Card1";
 //     greetings = "Good Night";
 //     textcolor.color = "red";
 //   }
-  const textstyle = {
-    marginTop: "150px",
-    textAlign: "center",
-    backgroundColor: "#0af0d1",
-    marginRight: "450px",
-    marginLeft: "450px",
-    border: "2px solid red",
-    borderRadius: "50px 20px",
-  };
+const textstyle = {
+  marginTop: "150px",
+  textAlign: "center",
+  backgroundColor: "#0af0d1",
+  marginRight: "450px",
+  marginLeft: "450px",
+  border: "2px solid red",
+  borderRadius: "50px 20px",
+};
 //   const back = {
 //     backgroundColor: "blue",
 //   };
 
-
+const myobj1=[
+  {
+    name:'Raees',
+    role:'Full stack developer',
+    company:'Hashpotato'
+  },
+  {
+    name:'Rameez',
+    role:'MERN stack developer',
+    company:'Hashpotato'
+  },
+  {
+    name:'Adeel',
+    role:'MERN stack developer',
+    company:'Hashpotato'
+  }
+];
+const test={
+  name:"raees",
+  name1:'rameez'
+}
+let age=56;
 function App() {
-  
+
   return (
     <>
 
@@ -80,17 +101,17 @@ function App() {
         </h1>
       </div> */}
 
-<div className="row">
-<div className="column">
-<Card1/>
-</div>  
-<div className="column">
-  <Card1/>
-</div>
-<div className="column">
-  <Card1/>
-</div>
-</div> 
+      <div className="row">
+        <div className="column">
+          <Card1  data={myobj1[0]}/>
+        </div>
+        <div className="column">
+          <Card1   data={myobj1[1]}/>
+        </div>
+        <div className="column">
+          <Card1  data={myobj1[2]}/>
+        </div>
+      </div>
     </>
   );
 }
