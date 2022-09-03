@@ -8,6 +8,7 @@ import { calculate } from "./Components/Add";
 import Subtract from "./Components/Subtract";
 import Card1 from "./Components/Card1";
 import Navbar from "./Components/Navbar";
+import Hook1 from "./Components/Hook1";
 
 // let today = new Date();
 // const time =
@@ -51,37 +52,44 @@ const textstyle = {
 //     backgroundColor: "blue",
 //   };
 
-const myobj1=[
+const myobj1 = [
   {
-    name:'Raees',
-    role:'Full stack developer',
-    company:'Hashpotato',
-    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
+    name: 'Raees',
+    role: 'Full stack developer',
+    company: 'Hashpotato',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
   },
   {
-    name:'Rameez',
-    role:'MERN stack developer',
-    company:'Hashpotato',
-    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
+    name: 'Rameez',
+    role: 'MERN stack developer',
+    company: 'Hashpotato',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
   },
   {
-    name:'Adeel',
-    role:'MERN stack developer',
-    company:'Hashpotato',
-    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
+    name: 'Adeel',
+    role: 'MERN stack developer',
+    company: 'Hashpotato',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
   },
   {
-    n1:'Home',
-    n2:'About',
-    n3:'Contact'
+    n1: 'Home',
+    n2: 'About',
+    n3: 'Contact'
   }
 ];
 
 function App() {
 
+  const myCard = (datum) => {
+    console.log("flag", datum);
+    return (
+      <Card1 data={datum} />
+    );
+  }
+
   return (
     <>
-<Navbar data={myobj1[3]}/>
+      <Navbar data={myobj1[3]} />
       {/* <Add/>
       <Subtract/>
       <Multiply/>
@@ -106,7 +114,7 @@ function App() {
         </h1>
       </div> */}
 
-<div className="App1">
+      {/* <div className="App1"> 
 
       <div className="row">
         <div className="column">
@@ -119,8 +127,10 @@ function App() {
           <Card1  data={myobj1[2]}/>
         </div>
       </div>
-  
       </div>
+       {myobj1.map(myCard)} */}
+
+       <Hook1/>
     </>
   );
 }
