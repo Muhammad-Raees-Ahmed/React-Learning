@@ -9,6 +9,7 @@ import Subtract from "./Components/Subtract";
 import Card1 from "./Components/Card1";
 import Navbar from "./Components/Navbar";
 import Hook1 from "./Components/Hook1";
+import Miniusestate from "./Components/Miniusestate";
 
 // let today = new Date();
 // const time =
@@ -130,7 +131,9 @@ function App() {
       </div>
        {myobj1.map(myCard)} */}
 
-       <Hook1/>
+       {/* <Hook1/> */}
+
+       <Miniusestate/>
     </>
   );
 }
