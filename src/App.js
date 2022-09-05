@@ -56,38 +56,38 @@ const textstyle = {
 
 const myobj1 = [
   {
-    name: 'Raees',
-    role: 'Full stack developer',
-    company: 'Hashpotato',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
+    name: "Raees",
+    role: "Full stack developer",
+    company: "Hashpotato",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU",
   },
   {
-    name: 'Rameez',
-    role: 'MERN stack developer',
-    company: 'Hashpotato',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
+    name: "Rameez",
+    role: "MERN stack developer",
+    company: "Hashpotato",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU",
   },
   {
-    name: 'Adeel',
-    role: 'MERN stack developer',
-    company: 'Hashpotato',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU'
+    name: "Adeel",
+    role: "MERN stack developer",
+    company: "Hashpotato",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU",
   },
   {
-    n1: 'Home',
-    n2: 'About',
-    n3: 'Contact'
-  }
+    n1: "Home",
+    n2: "About",
+    n3: "Contact",
+  },
 ];
 
 function App() {
-
   const myCard = (datum) => {
     console.log("flag", datum);
-    return (
-      <Card1 data={datum} />
-    );
-  }
+    return <Card1 data={datum} />;
+  };
 
   return (
     <>
@@ -132,12 +132,12 @@ function App() {
       </div>
        {myobj1.map(myCard)} */}
 
-       {/* <Hook1/> */}
+      {/* <Hook1/> */}
 
-       {/* <Miniusestate/> */}
-<div style={{marginTop:"30px"}}>
-     <Signup/>
-     </div>
+      {/* <Miniusestate/> */}
+      <div style={{ marginTop: "30px" }}>
+        <Signup />
+      </div>
     </>
   );
 }
