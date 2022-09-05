@@ -10,6 +10,7 @@ import Card1 from "./Components/Card1";
 import Navbar from "./Components/Navbar";
 import Hook1 from "./Components/Hook1";
 import Miniusestate from "./Components/Miniusestate";
+import Signup from "./Components/Signup";
 
 // let today = new Date();
 // const time =
@@ -133,7 +134,10 @@ function App() {
 
        {/* <Hook1/> */}
 
-       <Miniusestate/>
+       {/* <Miniusestate/> */}
+<div style={{marginTop:"30px"}}>
+     <Signup/>
+     </div>
     </>
   );
 }
