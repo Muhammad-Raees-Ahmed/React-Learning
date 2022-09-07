@@ -20,8 +20,10 @@ function Signup() {
   };
   console.log("Name : ", name);
 
-  const btnClick=()=>{
-   alert("djalkfjkl")
+  const btnPress=()=>{
+console.log("press");
+// alert("Pressed");
+window.M.toast({html: 'Tap Registered!'});
   }
   return (
     <div>
@@ -128,7 +130,7 @@ function Signup() {
                           <button
                             type="button"
                             className="btn btn-primary btn-lg"
-                            
+                            onClick={btnPress}
                           >
                             Register
                           </button>
