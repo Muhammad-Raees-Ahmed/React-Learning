@@ -11,6 +11,7 @@ import Navbar from "./Components/Navbar";
 import Hook1 from "./Components/Hook1";
 import Miniusestate from "./Components/Miniusestate";
 import Signup from "./Components/Signup";
+import Clockusestate from "./Components/Clockusestate";
 
 // let today = new Date();
 // const time =
@@ -135,9 +136,11 @@ function App() {
       {/* <Hook1/> */}
 
       {/* <Miniusestate/> */}
-      <div style={{ marginTop: "30px" }}>
+      {/* <div style={{ marginTop: "30px" }}>
         <Signup />
-      </div>
+      </div> */}
+
+     <Clockusestate/>
     </>
   );
 }
