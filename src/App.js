@@ -12,6 +12,7 @@ import Hook1 from "./Components/Hook1";
 import Miniusestate from "./Components/Miniusestate";
 import Signup from "./Components/Signup";
 import Clockusestate from "./Components/Clockusestate";
+import Navbar1 from "./Components/Navbar1";
 
 // let today = new Date();
 // const time =
@@ -92,7 +93,7 @@ function App() {
 
   return (
     <>
-      <Navbar data={myobj1[3]} />
+      {/* <Navbar data={myobj1[3]} /> */}
       {/* <Add/>
       <Subtract/>
       <Multiply/>
@@ -140,7 +141,9 @@ function App() {
         <Signup />
       </div> */}
 
-     <Clockusestate/>
+     {/* <Clockusestate/> */}
+
+     <Navbar1  value={myobj1[3]}/>
     </>
   );
 }
