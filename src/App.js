@@ -14,6 +14,7 @@ import Signup from "./Components/Signup";
 import Clockusestate from "./Components/Clockusestate";
 import Navbar1 from "./Components/Navbar1";
 import Image from "./Components/Image";
+import Joke from "./Components/Joke";
 
 // let today = new Date();
 // const time =
@@ -145,7 +146,8 @@ function App() {
      {/* <Clockusestate/> */}
 
      <Navbar1  value={myobj1[3]}/>
-     <Image/>
+     {/* <Image/> */}
+     <Joke/>
     </>
   );
 }
